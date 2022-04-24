@@ -1,17 +1,19 @@
 import React, { useState } from "react";
-import logo from "~/assets/logo.svg";
+import { useTranslation } from "react-i18next";
 
+import logo from "~/assets/logo.svg";
 import { Counter } from "~/presentations/components/Counter";
 import * as S from "./style";
 
 export const Greeting: React.FC = () => {
   const [count, setCount] = useState(0);
+  const { t } = useTranslation("greeting");
 
   return (
     <S.Root>
       <S.Header>
         <S.Logo src={logo} alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p>{t("Hello")}</p>
         <p>
           <Counter
             count={count}
@@ -19,15 +21,12 @@ export const Greeting: React.FC = () => {
           />
         </p>
         <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
           <S.Link
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            {t("Learn React")}
           </S.Link>
           {" | "}
           <S.Link
@@ -35,7 +34,7 @@ export const Greeting: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Vite Docs
+            {t("Vite Docs")}
           </S.Link>
         </p>
       </S.Header>

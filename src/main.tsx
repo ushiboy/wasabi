@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Global } from "@emotion/react";
 
+import "~/i18n/config";
 import { App } from "~/presentations/App";
 import { globalStyle } from "~/globalStyle";
 

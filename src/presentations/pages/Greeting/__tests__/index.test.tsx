@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
+import "~/i18n/config";
 import { Greeting } from "..";
 
 describe("Greeting", () => {
