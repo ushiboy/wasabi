@@ -9,3 +9,4 @@ The following changes are made to the template created by `npm create vite@lates
 
 - Changed file and directory structure.
 - Stopped using CSS and changed to style definition by [Emotion](https://emotion.sh/docs/introduction).
+- Configured to use typescript's paths alias.
