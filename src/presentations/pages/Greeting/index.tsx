@@ -1,11 +1,15 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import logo from "~/assets/logo.svg";
 
 import { Counter } from "~/presentations/components/Counter";
 import * as S from "./style";
 
-export const App = () => {
-  const [count, setCount] = useState(0);
+type Props = {
+  initialCount?: number;
+};
+
+export const Greeting: React.FC<Props> = ({ initialCount }) => {
+  const [count, setCount] = useState(initialCount || 0);
 
   return (
     <S.Root>
