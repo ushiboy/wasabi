@@ -1,6 +1,6 @@
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { Counter } from "../";
+import { Counter } from "..";
 
 describe("Counter", () => {
   it("should show the count", () => {
