@@ -1,9 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import logo from "~/assets/logo.svg";
 
+import { Counter } from "~/presentations/components/Counter";
 import * as S from "./style";
 
-export const App = () => {
+export const Greeting: React.FC = () => {
   const [count, setCount] = useState(0);
 
   return (
@@ -12,12 +13,10 @@ export const App = () => {
         <S.Logo src={logo} alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
-          <S.Button
-            type="button"
+          <Counter
+            count={count}
             onClick={() => setCount((count) => count + 1)}
-          >
-            count is: {count}
-          </S.Button>
+          />
         </p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
