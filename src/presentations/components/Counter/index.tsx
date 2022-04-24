@@ -8,7 +8,7 @@ type Props = {
 };
 
 export const Counter: React.FC<Props> = ({ count, onClick }) => (
-  <S.Button type="button" onClick={onClick}>
+  <S.Button type="button" data-hook="counter" onClick={onClick}>
     count is: {count}
   </S.Button>
 );
