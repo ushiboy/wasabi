@@ -1,0 +1,6 @@
+{
+  "Hello": "こんにちは Vite + React!",
+  "Learn React": "Reactを学ぶ",
+  "Vite Docs": "Viteの資料",
+  "count is": "カウント: {{val}}"
+}

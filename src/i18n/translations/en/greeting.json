@@ -1,0 +1,6 @@
+{
+  "Hello": "Hello Vite + React!",
+  "Learn React": "Learn React",
+  "Vite Docs": "Vite Docs",
+  "count is": "count is: {{val}}"
+}
