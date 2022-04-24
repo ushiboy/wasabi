@@ -1,5 +1,6 @@
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
+import "~/i18n/config";
 import { Counter } from "..";
 
 describe("Counter", () => {
