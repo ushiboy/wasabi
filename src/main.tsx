@@ -1,14 +1,19 @@
+import { Global } from "@emotion/react";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Global } from "@emotion/react";
 
 import "~/i18n/config";
-import { App } from "~/presentations/App";
 import { globalStyle } from "~/globalStyle";
+import { App } from "~/presentations/App";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <Global styles={globalStyle} />
-    <App />
-  </React.StrictMode>
-);
+const root = document.getElementById("root");
+if (root) {
+  ReactDOM.createRoot(root).render(
+    <React.StrictMode>
+      <Global styles={globalStyle} />
+      <App />
+    </React.StrictMode>
+  );
+} else {
+  console.error("Root not found.");
+}
