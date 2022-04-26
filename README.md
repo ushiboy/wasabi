@@ -12,6 +12,7 @@ The following changes are made to the template created by `npm create vite@lates
 - Configured to use typescript's paths alias.
 - Added unit test environment with [Jest](https://jestjs.io/).
 - Added multilingual support by [i18next](https://www.i18next.com/).
+- Added [eslint](https://eslint.org/).
 
 ## License
 
