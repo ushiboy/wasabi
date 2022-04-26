@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import * as S from "./style";
+
 import logo from "~/assets/logo.svg";
 import { Counter } from "~/presentations/components/Counter";
-import * as S from "./style";
 
 export const Greeting: React.FC = () => {
   const [count, setCount] = useState(0);

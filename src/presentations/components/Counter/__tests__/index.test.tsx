@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-empty-function, @typescript-eslint/no-non-null-assertion */
 import { render, fireEvent } from "@testing-library/react";
+
 import "@testing-library/jest-dom";
 import "~/i18n/config";
 import { Counter } from "..";
