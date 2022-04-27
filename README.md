@@ -13,6 +13,7 @@ The following changes are made to the template created by `npm create vite@lates
 - Added unit test environment with [Jest](https://jestjs.io/).
 - Added multilingual support by [i18next](https://www.i18next.com/).
 - Added [eslint](https://eslint.org/).
+- Added routing by [react-router](https://reactrouter.com/).
 
 ## License
 
