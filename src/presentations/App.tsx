@@ -1,5 +1,5 @@
 import React from "react";
 
-import { Greeting } from "~/presentations/pages";
+import { AppRoutes } from "./route";
 
-export const App: React.FC = () => <Greeting />;
+export const App: React.FC = () => <AppRoutes />;
