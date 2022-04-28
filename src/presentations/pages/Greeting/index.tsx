@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 
+import { useCount } from "./hooks";
 import * as S from "./style";
 
 import logo from "~/assets/logo.svg";
 import { Counter } from "~/presentations/components/Counter";
 
 export const Greeting: React.FC = () => {
-  const [count, setCount] = useState(0);
+  const { count, increment } = useCount();
   const { t } = useTranslation("greeting");
 
   return (
@@ -16,10 +17,7 @@ export const Greeting: React.FC = () => {
         <S.Logo src={logo} alt="logo" />
         <p>{t("Hello")}</p>
         <p>
-          <Counter
-            count={count}
-            onClick={() => setCount((count) => count + 1)}
-          />
+          <Counter count={count} onClick={increment} />
         </p>
         <p>
           <S.Link
