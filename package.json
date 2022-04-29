@@ -10,7 +10,9 @@
     "lint": "npm run check && npm run lint:eslint && npm run lint:prettier",
     "lint:eslint": "eslint src --fix --ext .js,.jsx,.ts,.tsx",
     "lint:prettier": "prettier --write src",
-    "test": "jest"
+    "test": "jest",
+    "e2e:test": "playwright test",
+    "e2e:report": "playwright show-report"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -23,6 +25,7 @@
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.21.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/react-hooks": "^8.0.0-alpha.1",
