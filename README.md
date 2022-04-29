@@ -15,6 +15,7 @@ The following changes are made to the template created by `npm create vite@lates
 - Added [eslint](https://eslint.org/).
 - Added routing by [react-router](https://reactrouter.com/).
 - Added custom Hooks and introduced [@testing-library/react-hooks](https://github.com/testing-library/react-hooks-testing-library).
+- Added E2E testing by [playwright](https://playwright.dev/).
 
 ## License
 
