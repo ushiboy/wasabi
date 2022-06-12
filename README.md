@@ -16,6 +16,11 @@ The following changes are made to the template created by `npm create vite@lates
 - Added routing by [react-router](https://reactrouter.com/).
 - Added custom Hooks and introduced [@testing-library/react-hooks](https://github.com/testing-library/react-hooks-testing-library).
 - Added E2E testing by [playwright](https://playwright.dev/).
+- Added other sample codes.
+
+## Sample Codes
+
+- Sample using react-router v6 to check before page transition and possibly cancel the page transition.
 
 ## License
 
